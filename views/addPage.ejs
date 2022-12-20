@@ -1,0 +1,39 @@
+<%- include('partial/header') %>
+
+
+<body>
+
+<%- include('partial/headerSecret') %>
+
+
+
+<div class="addContainer" style="margin:100px">
+  <div class="bg-light" style="padding:50px 20px 50px;margin-top:30px; border-radius:10px">
+    <h1 style="padding-bottom:20px">Добавить секрет</h1>
+    <form class="" action="/addPage" method="post">
+      <div class="mb-3">
+        <div class="form-group">
+          <label for="secretTitle" class="form-label" ><strong>Заголовок секрета</strong></label>
+          <input type="text" class="form-control" name="addTitle" id="secretTitle" >
+         <label for="secretText " class="form-label" style="padding-top:5px;"><strong>Ваш секрет</strong></label>
+         <textarea class="form-control" id="secretText" name="addText" rows="6"></textarea>
+       </div>
+      </div>
+      <div class="" style="text-align:right">
+        <button class="btn btn-secondary " style="margin-top:20px;" type="submit" name="addButton">Добавить</button>
+      </div>
+
+    </form>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+</body>
+
+<%- include('partial/footer') %>
